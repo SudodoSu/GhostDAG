@@ -3,31 +3,80 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --one: min(1px, 0.052vw);
+  --titleBold: 700;
+  --PRegular: 400;
+  --Bold: 600;
+  --medium: 500;
+  --ExtraBold: 900;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @apply font-inter;
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: url(/images/bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden !important;
+  @apply font-inter;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+li {
+  @apply text-white;
+}
+
+
+
+h1 {}
+h2 {
+  @apply font-titleBold font-inter;
+}
+
+p {
+  @apply text-gray-400 text-sm md:text-base;
+}
+
+/* Button */
+
+.btn {
+  @apply flex items-center bg-gradient-blue rounded-full font-titleBold font-inter text-white cursor-pointer text-[14px] leading-8 md:text-lg px-8 py-4;
 }

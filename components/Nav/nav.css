@@ -1,0 +1,16 @@
+.Mui-focusVisible {
+  outline: none!important;
+}
+
+.drawer_custom {
+  --Drawer-verticalSize: "300px" !important;
+}
+
+
+@media (min-width: 1024px) {
+
+  .header_image {
+      width: calc(var(--one)* 388);
+      height: calc(var(--one)* 84);
+    }
+}
