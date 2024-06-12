@@ -13,50 +13,51 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ZkSync.ai - Powering the Future with AI",
+  title: "GhostDAG - Leading the Future of Crypto Mining",
   description:
-    "Discover the power of ZkSync.ai, the ultimate platform fueled by AI innovation, reshaping the digital finance landscape. Start building tomorrow's crypto solutions today.",
+    "Explore GhostDAG, your premier destination for state-of-the-art crypto miners. Harness the power of cutting-edge technology to maximize your mining efficiency and profits.",
   icons: {
     icon: "/assets/images/logo.png",
   },
   generator: "Next.js",
-  applicationName: "ZkSync.ai",
+  applicationName: "GhostDAG",
   referrer: "origin-when-cross-origin",
   keywords: [
-    "ZkSync.ai",
-    "cryptocurrency platform",
-    "AI-powered solutions",
-    "crypto innovation",
-    "digital finance",
-    "AI-driven technology",
+    "GhostDAG",
+    "crypto miners",
+    "cryptocurrency mining",
+    "mining hardware",
+    "crypto mining solutions",
+    "mining efficiency",
+    "crypto technology",
   ],
   robots: "index, follow",
   viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
     type: "website",
-    title: "ZkSync.ai - Powering the Future with AI",
+    title: "GhostDAG - Leading the Future of Crypto Mining",
     description:
-      "Discover the power of ZkSync.ai, the ultimate platform fueled by AI innovation, reshaping the digital finance landscape. Start building tomorrow's crypto solutions today.",
-    url: "https://zksync.ai",
+      "Explore GhostDAG, your premier destination for state-of-the-art crypto miners. Harness the power of cutting-edge technology to maximize your mining efficiency and profits.",
+    url: "https://ghostdag.network",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZkSync.ai - Powering the Future with AI",
+    title: "GhostDAG - Leading the Future of Crypto Mining",
     description:
-      "Discover the power of ZkSync.ai, the ultimate platform fueled by AI innovation, reshaping the digital finance landscape. Start building tomorrow's crypto solutions today.",
+      "Explore GhostDAG, your premier destination for state-of-the-art crypto miners. Harness the power of cutting-edge technology to maximize your mining efficiency and profits.",
     images: [
       {
         url: "/assets/images/logo.png",
-        alt: "ZkSync.ai",
+        alt: "GhostDAG",
       },
     ],
   },
   authors: [
-    { name: "ZkSync.ai" },
-    { name: "ZkSync.ai", url: "https://zksync.ai" },
+    { name: "GhostDAG" },
+    { name: "GhostDAG", url: "https://ghostdag.network" },
   ],
-  creator: "ZkSync.ai",
-  publisher: "ZkSync.ai",
+  creator: "GhostDAG",
+  publisher: "GhostDAG",
   formatDetection: {
     email: false,
     address: false,
