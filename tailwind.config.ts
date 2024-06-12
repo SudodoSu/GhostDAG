@@ -24,6 +24,8 @@ const config: Config = {
       backgroundImage: {
         "gradient-blue":
           "linear-gradient(43deg,#25ff6f -98.02%,#001dff 91.33%)",
+        "gradient-blue-reverse":
+          "linear-gradient(223deg,#25ff6f -98.02%,#001dff 91.33%)",
         "gradient-blue-180": "linear-gradient(180deg, #06f, #001638)",
       },
       fontWeight: {

@@ -78,5 +78,28 @@ p {
 /* Button */
 
 .btn {
-  @apply flex items-center bg-gradient-blue rounded-full font-titleBold font-inter text-white cursor-pointer text-[14px] leading-8 md:text-lg px-8 py-4;
+  @apply flex items-center bg-gradient-blue rounded-full font-titleBold font-inter text-white cursor-pointer text-[14px] leading-8 md:text-lg;
+          padding: calc(var(--one)* 15) calc(var(--one)* 70);
+}
+
+.btn:hover {
+  @apply bg-gradient-blue-reverse;
+}
+
+
+.div_parent {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--one)* 32);
+}
+
+.h2h2 {
+  padding-block: calc(var(--one)* 16);
+  padding-inline: calc(var(--one)* 32);
+  background-color: #26262a;
+  border-radius: calc(var(--one)* 42);
+  max-width: 100%;
+  text-align: center;
 }
