@@ -102,9 +102,9 @@ const Navbar = () => {
         anchor="top"
         open={open}
         onClose={toggleDrawer(false)}
-        className=" drawer_custom translate-y-[64px] !z-10"
+        className=" drawer_custom translate-y-[96px] !z-10"
       >
-        <div className={`bg-blue w-full px-3  py-3 pt-4 shadow-md`}>
+        <div className={`bg-background w-full px-3  py-3 pt-4 shadow-md`}>
           <ul className="flex flex-col gap-4">
             {linksData.data.map((item, index) => (
               <li key={index} className={`flex `}>
