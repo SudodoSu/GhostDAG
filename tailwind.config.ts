@@ -42,6 +42,7 @@ const config: Config = {
         blue: "#001dff",
         background: "#1b1b1c",
         gray_filter: "#0d1521",
+        gray1: "#a6b1c5",
       },
     },
   },

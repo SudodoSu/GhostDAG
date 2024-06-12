@@ -10,7 +10,14 @@
 @media (min-width: 1024px) {
 
   .header_image {
-      width: calc(var(--one)* 388);
-      height: calc(var(--one)* 84);
+      width: calc(var(--one)* 70);
+      height: calc(var(--one)* 70);
     }
+  .header_text {
+    font-size: calc(var(--one)*56);
+      line-height: calc(var(--one)*43.57);
+  }
+  .header_logo_container {
+    gap: calc(var(--one)* 9.93);
+  }
 }

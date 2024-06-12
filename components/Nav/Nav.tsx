@@ -33,15 +33,30 @@ const Navbar = () => {
         className={` px-6 py-6  max-w-[1536px] md:mx-auto w-full left-0
            `}
       >
-        <div className="flex justify-between">
+        <div className="flex justify-between relative">
           <Link href="/" className="">
-            <div className=" header_image w-52">
-              <Image
-                src="/images/logo.png"
-                alt="ZkSync.ai Logo"
-                width={388}
-                height={84}
-              />
+            <div className=" flex items-center header_logo_container">
+              <div className="relative header_image flex items-center justify-center">
+                <div className="absolute">
+                  <Image
+                    src="/images/logo_img.png"
+                    alt="ZkSync.ai Logo"
+                    width={25}
+                    height={25}
+                    className="w-full h-full "
+                  />
+                </div>
+                <div className="absolute inset-0">
+                  <Image
+                    src="/images/gifs/3d.gif"
+                    alt="ZkSync.ai Logo"
+                    width={50}
+                    height={50}
+                    className="w-full h-full "
+                  />
+                </div>
+              </div>
+              <h2 className="header_text">GhostDAG</h2>
             </div>
           </Link>
 
