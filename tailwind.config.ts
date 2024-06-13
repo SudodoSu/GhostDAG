@@ -14,7 +14,7 @@ const config: Config = {
       center: true,
 
       screens: {
-        sm: "42rem",
+        sm: "36rem",
         md: "42rem",
         lg: "56rem",
         xl: "96rem",
@@ -45,6 +45,7 @@ const config: Config = {
         background: "#1b1b1c",
         gray_filter: "#0d1521",
         gray1: "#a6b1c5",
+        gray2: "#26262a",
       },
     },
   },

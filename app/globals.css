@@ -94,6 +94,13 @@ p {
     text-align: center;
 }
 
+
+/* containers */
+
+.container2 {
+  @apply mx-auto p-[15px] w-full sm:max-w-[36rem] md:max-w-[42rem] lg:max-w-[56rem] xl:max-w-[72rem];
+}
+
 /* Button */
 
 .btn {
