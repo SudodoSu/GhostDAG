@@ -5,7 +5,7 @@ import "./footer.css";
 function Footer() {
   return (
     <footer className="mt-32 footer">
-      <div className="w-full bg-gray2 py-12">
+      <div className="w-full  py-12">
         <div className="container flex justify-between flex-col sm:flex-row  gap-8 sm:gap-0">
           <div>
             <div className=" mb-5 flex items-center header_logo_container">
@@ -183,7 +183,7 @@ function Footer() {
 
       <div className="w-screen">
         <div className="footer_rights">
-          <p className="rights_p !max-w-full">
+          <p className="rights_p !max-w-full !mb-0">
             Copyright © GhostDAG Disclaimer: Cryptocurrency may be unregulated
             in your jurisdiction. The value of cryptocurrencies may fluctuate.
             Profits may be subject to capital gains or other taxes applicable in
