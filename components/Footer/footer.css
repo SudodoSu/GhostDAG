@@ -73,8 +73,6 @@
 
  .footer_rights {
         width: 100%;
-            display: flex;
-            justify-content: space-between;
             padding: calc(var(--one)* 16) calc(var(--one)* 48);
             background: #26262a;
             color: var(--Text, #a6b1c5);

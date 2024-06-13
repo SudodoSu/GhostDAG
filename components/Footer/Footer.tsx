@@ -31,7 +31,7 @@ function Footer() {
               </div>
               <h2 className="footer_logo_text">BlockDAG</h2>
             </div>
-            <p className="text-sm footer_paragraph mb-5">
+            <p className="text-sm footer_paragraph mb-5 text-left">
               BlockDAG is a Layer 1 proof of work consensus mechanism that
               evolves the crypto sphere with a cutting-edge Directed Acyclic
               Graph structure building on the foundations of Bitcoin & Kaspa
@@ -183,7 +183,7 @@ function Footer() {
 
       <div className="w-screen">
         <div className="footer_rights">
-          <p className="rights_p">
+          <p className="rights_p !max-w-full">
             Copyright © GhostDAG Disclaimer: Cryptocurrency may be unregulated
             in your jurisdiction. The value of cryptocurrencies may fluctuate.
             Profits may be subject to capital gains or other taxes applicable in

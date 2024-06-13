@@ -68,16 +68,16 @@ padding-inline: calc(var(--one)* 35);
 
 
 .dev_releases_read_more {
-        display: flex;
-            align-items: center;
-            font-family: Inter;
-            font-size: calc(var(--one)*16);
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: -.32px;
-            background: var(--Linear, linear-gradient(223deg, #fbff25 -91.33%, red 98.02%));
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    font-size: calc(var(--one)*16);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -.32px;
+    background: var(--Linear, linear-gradient(223deg, #fbff25 -91.33%, red 98.02%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

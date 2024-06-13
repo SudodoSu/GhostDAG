@@ -136,3 +136,11 @@ p {
   max-width: min(var(--one)* 1128, 95%);
   margin-inline: auto;
 }
+
+
+.buttons_div {
+  display: flex;
+  justify-content: center;
+  gap: calc(var(--one)* 24);
+  flex-wrap: wrap;
+}

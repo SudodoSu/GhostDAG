@@ -125,3 +125,31 @@ line-height: calc(var(--one)*32);
         translate: 0 calc(var(--one)* 132);
     }
 }
+
+
+.AddSection_div {
+        max-width: min(var(--one)* 1356, 95%);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: calc(var(--one)* 20);
+}
+
+.video_container {
+        position: relative;
+            isolation: isolate;
+            gap: calc(var(--one)* 144);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            top: calc(var(--one)* -60);
+}
+
+.AddSection_presale_text {
+    font-size: calc(var(--one)*90);
+    line-height: calc(var(--one)*99);
+}
+
+.custom_dots li button:before {
+    @apply !text-white !text-[8px];
+}
