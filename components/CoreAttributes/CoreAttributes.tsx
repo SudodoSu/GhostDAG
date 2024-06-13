@@ -10,7 +10,7 @@ function CoreAttributes() {
         <div className="flex flex-col gap-4">
           <div className="flex gap-[calc(var(--one)*16)] justify-between">
             {/*  */}
-            <div className="flex w-1/2 bg-gray2 p-[calc(var(--one)*32)] rounded-3xl gap-2">
+            <div className="flex w-1/2 bg-gray2 p-[calc(var(--one)*32)] rounded-3xl gap-2g">
               <div className="flex items-start">
                 <div className="w-[calc(var(--one)*92)] h-[calc(var(--one)*92)]">
                   <Image
