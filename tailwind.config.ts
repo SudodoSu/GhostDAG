@@ -27,6 +27,10 @@ const config: Config = {
         "gradient-blue-reverse":
           "linear-gradient(223deg,#25ff6f -98.02%,#001dff 91.33%)",
         "gradient-blue-180": "linear-gradient(180deg, #06f, #001638)",
+
+        "gradient-66": "linear-gradient(to top right, #d0e8fb, #0370ca)",
+        "gradient-33": "linear-gradient(to top right, #bcf9d9, #03ca61)",
+        "gradient-1": "linear-gradient(to top right, #b276ff, #5a03ca)",
       },
       fontWeight: {
         titleBold: "var(--titleBold)",

@@ -4,6 +4,7 @@ import DevReleases from "@/components/DevReleases/DevReleases";
 import HeroSection from "@/components/HeaderSection/HeroSection";
 import PoweredBy from "@/components/PoweredBy/PoweredBy";
 import Presale from "@/components/Presale/Presale";
+import Tokenomics from "@/components/Tokenomics/Tokenomics";
 import YoutubeSection from "@/components/YoutubeSection/YoutubeSection";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <PoweredBy />
       <CoreAttributes />
+      <Tokenomics />
     </main>
   );
 }
