@@ -35,6 +35,9 @@ const config: Config = {
         "radial-gradient-signup":
           "radial-gradient(circle, #001dff 50%, #25ff6f 100%)",
       },
+      boxShadow: {
+        "blue-shadow": "0 51px 200px -56px #1d44ff",
+      },
       fontWeight: {
         titleBold: "var(--titleBold)",
         PRegular: "var(--PRegular)",
@@ -49,6 +52,7 @@ const config: Config = {
         primary: "#0c45e7",
         green: "#25ff6f",
         blue: "#001dff",
+        blue2: "#1d44ff",
         background: "#1b1b1c",
         gray_filter: "#0d1521",
         gray1: "#a6b1c5",

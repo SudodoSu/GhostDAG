@@ -3,7 +3,7 @@ import Image from "next/image";
 function CoreAttributes() {
   return (
     <section className="w-full">
-      <div className=" container2 flex flex-col items-center gap-5">
+      <div className=" container flex flex-col items-center gap-5">
         <div>
           <h1 className="title">CORE ATTRIBUTES</h1>
         </div>
@@ -66,7 +66,7 @@ function CoreAttributes() {
           {/*  */}
           <div className="flex w-full bg-gray2 p-[calc(var(--one)*32)] rounded-3xl">
             <div className="flex  w-full gap-[calc(var(--one)*32)]">
-              <div className="flex items-start">
+              <div className="flex items-center">
                 <div className="w-[calc(var(--one)*92)] h-[calc(var(--one)*92)]">
                   <Image
                     src="/images/svgs/digitalisation 1.svg"

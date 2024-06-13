@@ -12,7 +12,7 @@ function Tokenomics() {
             to its exclusivity and value preservation.
           </h3>
           <div className="w-full">
-            <div className="mx-auto w-[calc(var(--one)*460)] h-[calc(var(--one)*460)] relative">
+            <div className="mx-auto w-[calc(var(--one)*460)] h-[calc(var(--one)*460)] relative mb-2">
               <Image
                 src="/images/svgs/graff.svg"
                 alt="Graff"

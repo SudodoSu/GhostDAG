@@ -1,0 +1,10 @@
+.faq_line::after {
+content: "";
+position: absolute;
+top: 50%;
+display: block;
+width: 100%;
+height: calc(var(--1)* 2);
+background-color: var(--On-Background, #26262a);
+}
+    
