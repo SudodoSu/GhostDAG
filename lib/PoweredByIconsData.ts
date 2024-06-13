@@ -9,7 +9,7 @@ type DataObject = {
 
 export const PoweredByIconsData: DataObject = {
   data: [
-    { path: "/images/PoweredByIcons/OpenAI.png", alt: "OpenAI" },
+    { path: "/images/PoweredByIcons/OpenAi.png", alt: "OpenAi" },
     { path: "/images/PoweredByIcons/Gemini.png", alt: "Gemini" },
     { path: "/images/PoweredByIcons/Asus.png", alt: "Asus" },
     { path: "/images/PoweredByIcons/Github.png", alt: "Github" },
