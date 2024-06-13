@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeaderSection/HeroSection";
 import Join from "@/components/Join/Join";
 import PoweredBy from "@/components/PoweredBy/PoweredBy";
 import Presale from "@/components/Presale/Presale";
+import Press from "@/components/Press/Press";
 import Tokenomics from "@/components/Tokenomics/Tokenomics";
 import YoutubeSection from "@/components/YoutubeSection/YoutubeSection";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <PoweredBy />
       <CoreAttributes />
       <Tokenomics />
+      <Press />
       <Faq />
       <Join />
     </main>
