@@ -31,6 +31,9 @@ const config: Config = {
         "gradient-66": "linear-gradient(to top right, #d0e8fb, #0370ca)",
         "gradient-33": "linear-gradient(to top right, #bcf9d9, #03ca61)",
         "gradient-1": "linear-gradient(to top right, #b276ff, #5a03ca)",
+
+        "radial-gradient-signup":
+          "radial-gradient(circle, #001dff 50%, #25ff6f 100%)",
       },
       fontWeight: {
         titleBold: "var(--titleBold)",

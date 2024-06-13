@@ -2,6 +2,7 @@ import About from "@/components/About/About";
 import CoreAttributes from "@/components/CoreAttributes/CoreAttributes";
 import DevReleases from "@/components/DevReleases/DevReleases";
 import HeroSection from "@/components/HeaderSection/HeroSection";
+import Join from "@/components/Join/Join";
 import PoweredBy from "@/components/PoweredBy/PoweredBy";
 import Presale from "@/components/Presale/Presale";
 import Tokenomics from "@/components/Tokenomics/Tokenomics";
@@ -18,6 +19,7 @@ export default function Home() {
       <PoweredBy />
       <CoreAttributes />
       <Tokenomics />
+      <Join />
     </main>
   );
 }
