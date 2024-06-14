@@ -42,9 +42,14 @@ export default function YoutubeSlider() {
     <div>
       <Slider {...settings}>
         {YoutubeSliderData.data.map((item, index) => (
-          <div key={index} className="px-[calc(var(--one)*35)]">
+          <div
+            key={index}
+            className="px-[calc(var(--one)*35)] h-[calc(var(--one)*240)]"
+          >
             <iframe
-              className="w-full aspect-video self-stretch"
+              width={845}
+              height={480}
+              className="w-full h-full aspect-video self-stretch"
               src={item.path}
               frameBorder="0"
               referrerPolicy="strict-origin-when-cross-origin"
