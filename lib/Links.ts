@@ -12,7 +12,7 @@ type DataObject = {
 export const linksData: DataObject = {
   data: [
     { path: "/", titles: "keynote" },
-    { path: "/team", titles: "dev releases" },
+    { path: "/dev-releases", titles: "dev releases" },
     { path: "/presale", titles: "products" },
     { path: "/presale", titles: "win $2m usd" },
     { path: "/presale", titles: "wiki" },
