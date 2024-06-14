@@ -34,7 +34,7 @@ export default function HeroSection() {
     ],
   };
   return (
-    <section className="w-screen h-screen">
+    <section className=" lg:w-screen">
       <Slider {...settings}>
         <Keynote2 />
         <AddSection />

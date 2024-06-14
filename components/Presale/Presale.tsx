@@ -2,7 +2,7 @@ import Link from "next/link";
 import "./presale.css";
 function Presale() {
   return (
-    <section className="w-full">
+    <section className="w-full py-20">
       <div className="container">
         <div>
           <div className="presale_title_container">

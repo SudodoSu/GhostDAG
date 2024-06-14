@@ -3,9 +3,9 @@ import Image from "next/image";
 
 function AddSection() {
   return (
-    <div className=" h-[calc(var(--one)*900)] calc_top flex justify-center">
+    <div className=" h-full lg:h-[calc(var(--one)*900)] calc_top flex justify-center">
       <div className="w-full h-full flex  justify-center">
-        <div className="w-full h-full items-center flex flex-col">
+        <div className="h-[calc(100vh-10rem)] lg:h-full w-full items-center flex flex-col">
           <div className="flex items-center justify-center">
             <video
               className="w-full h-full rounded-b-2xl"

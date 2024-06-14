@@ -4,30 +4,39 @@ import { paymentIconsList } from "@/lib/paymentIconsList";
 
 function Keynote2() {
   return (
-    <div className="w-full h-[calc(var(--one)*900)] relateve calc_top ">
+    <div className="w-full lg:h-[calc(var(--one)*900)] h-[calc(100vh-10rem)] relative calc_top ">
       <div className="relative">
-        <div className="relative w-full">
-          <div className="h-full relative overflow-hidden ">
-            <Image
+        <div className="h-[calc(100vh-10rem)] lg:h-auto relative overflow-hidden w-full flex flex-col lg:block items-center justify-center">
+          <div className="hidden lg:block mx-auto lg:h-auto h-full relative lg:overflow-hidden ">
+            <img
               src="/images/keynote-hero-2.webp"
               alt="keynote-hero-2"
               width={485}
               height={415}
-              className="Hero_img"
+              className=" Hero_img w-full lg:h-[calc(var(--one)*415)] lg:w-[calc(var(--one)*485)] lg:left-1/2 bottom-0"
             />
-            <Image
+            <img
               src="/images/keynote-bg.webp"
               alt="keynote-bg"
               width={1337}
               height={751}
-              className="Hero_img_bg"
+              className="h-[calc(var(--one)*751)] w-[calc(var(--one)*1337)] relative -z-5 Hero_img_bg lg:left-1/2 bottom-0"
             />
-            <div className="Hero_ellipse"></div>
           </div>
-
-          <div className=" flex flex-col bottom-0 justify-end absolute items-center Hero_inner_container Hero_container">
+          <div className="Hero_ellipse top-full lg:left-1/2 lg:top-1/2"></div>
+          <div className="lg:hidden w-full h-full">
+            <img
+              src="/images/keynote-bg-2.webp"
+              alt="keynote-bg-2"
+              width={1440}
+              height={696}
+              className="mx-auto object-cover h-full md:w-full w-full"
+            />
+          </div>
+          {/*  */}
+          <div className=" flex flex-col bottom-0 lg:justify-end sm:justify-start justify-center absolute items-center top-0 lg:right-[calc(var(--one)*250)]">
             <div className="">
-              <div className="relative ">
+              <div className="relative">
                 <span className=" num_two">2</span>
                 <span className="keynote_custome uppercase">keynote</span>
               </div>
@@ -43,7 +52,7 @@ function Keynote2() {
                 <div>
                   <Link href="keynote">
                     <div className="Hero_div_button">
-                      <Image
+                      <img
                         src="/images/moon-play.png"
                         alt="moon-play"
                         width={98}
@@ -55,7 +64,7 @@ function Keynote2() {
                 </div>
               </div>
             </div>
-            <div className="flex Hero_text_gap items-center">
+            <div className="flex flex-col lg:flex-row Hero_text_gap items-center">
               <h1 className="Hero_text2 font-[800]">
                 Presale is <span className="text-green">Live</span>
               </h1>
@@ -67,7 +76,7 @@ function Keynote2() {
                       alt={icon.alt}
                       width={60}
                       height={48}
-                      className="paymentIcons"
+                      className="paymentIcons md:w-[calc(var(--one)*120)] md:h-[calc(var(--one)*120)]"
                     />
                   </li>
                 ))}

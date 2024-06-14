@@ -1,34 +1,168 @@
-.Hero_ellipse {
+
+
+.calc_top {
+    translate: 0 96px;
+}
+
+
+.num_two {
+    @apply bg-gradient-blue-180 font-ExtraBold font-inter;
+    font-size: calc(var(--one)*887);
+    font-weight: 900;
+    line-height: calc(var(--one)*500);
+    -webkit-text-stroke: calc(var(--one)* 2) #0094ff;
+    background: linear-gradient(180deg, #06f, #001638);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-left: calc(var(--one)*300);
+}
+
+
+.paymentIcons {
+    width: calc(var(--one)* 180);
+    height: calc(var(--one)* 180);
+}
+
+.Hero_text {
+    font-size: calc(var(--one)*108);
+    line-height: calc(var(--one)*140.8);
+}
+
+.Hero_text2 {
+    font-size: calc(var(--one)*106);
+    line-height: calc(var(--one)*122.8);
+}
+
+.Hero_text_gap {
+    gap: calc(var(--one)* 32);
+}
+
+.keynote_custome {
+    text-align: center;
+    left: 50%;
+    bottom: calc(var(--one)* 150);
+    transform: translateX(-50%);
     position: absolute;
-        left: 50%;
-        top: 50%;
+    font-size: calc(var(--one)*203);
+    font-weight: 900;
+    line-height: calc(var(--one)*140);
+    letter-spacing: -.02em;
+    background: linear-gradient(180deg, #fff, #999);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 calc(var(--one)* 7.76) 0 #000;
+}
+
+.Hero_butoon {
+    border: calc(var(--one)* 3) solid #acbaff;
+    border-radius: calc(var(--one)* 20);
+    background: radial-gradient(47.93% 311.57% at 50% 50%, #fff 0, #a7b6ff 100%);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: calc(var(--one)* 20);
+    font-weight: 800;
+    font-size: calc(var(--one)*82);
+    letter-spacing: -2%;
+    line-height: calc(var(--one)*32);
+}
+
+.Hero_div_button {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    width: calc(var(--one)* 150);
+    margin-top: calc(var(--one)* 16);
+    cursor: pointer;
+}
+
+.AddSection_div {
+    max-width: min(var(--one)* 1356, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: calc(var(--one)* 20);
+}
+
+.video_container {
+    position: relative;
+    isolation: isolate;
+    gap: calc(var(--one)* 144);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    top: calc(var(--one)* -60);
+}
+
+.AddSection_presale_text {
+    font-size: calc(var(--one)*90);
+    line-height: calc(var(--one)*99);
+}
+
+.custom_dots li button:before {
+    @apply !text-white !text-[8px];
+}
+
+
+
+@media (min-width: 768px) {
+    .num_two {
+        @apply text-[calc(var(--one)*587)] ml-[calc(var(--one)*250)];
+    }
+    .paymentIcons {
+        width: calc(var(--one)* 110);
+            height: calc(var(--one)* 110);
+    }
+        .Hero_text {
+            @apply text-[calc(var(--one)*78)] leading-[calc(var(--one)*110.8)];
+        }
+    
+        .Hero_text2 {
+            @apply text-[calc(var(--one)*76)] leading-[calc(var(--one)*92.8)];
+        }
+    
+        .keynote_custome {
+            @apply text-[calc(var(--one)*153)];
+        }
+    
+        .Hero_butoon {
+            @apply text-[calc(var(--one)*42)];
+        }
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+.calc_top {
+        translate: 0 calc(var(--one)* 132);
+    }
+
+    .Hero_ellipse {
+    position: absolute;
         z-index: -4;
         width: calc(var(--one)* 1400);
         height: calc(var(--one)* 1232);
         transform: translateY(-50%);
         background-color: #0d1521;
+        @apply left-1/2;
         border-radius: 50%;
         filter: blur(calc(var(--one)* 52));
 }
 
 .Hero_img_bg {
                     position: relative;
-                        left: 50%;
-                        bottom: 0;
                         z-index: -5;
-                        width: calc(var(--one)* 1337);
-                        height: calc(var(--one)* 751);
                         transform: translate(-80%);
 }
 
 .Hero_img {
             position: absolute;
-                left: 50%;
-                bottom: 0;
                 z-index: 1;
-                width: calc(var(--one)* 485);
-                height: calc(var(--one)* 415);
                 transform: translate(-155%, -50%);
+
 }
 
 
@@ -63,18 +197,6 @@
 
 .Hero_text_gap {
         gap: calc(var(--one)* 32);
-}
-
-.Hero_inner_container {
-    right: calc(var(--one)* 250);
-        top: 0;
-}
-
-.Hero_container { 
-        padding-bottom: calc(var(--one)* 64);
-        padding-top: calc(var(--1)* 85);
-            min-height: min(100vh, var(--1)* 714);
-            max-width: min(var(--1)* 1480, 95%);
 }
 
 .keynote_custome {
@@ -115,18 +237,6 @@ line-height: calc(var(--one)*32);
         margin-top: calc(var(--one)* 16);
         cursor: pointer;
 }
-
-.calc_top {
-    translate: 0 96px;
-}
-
-@media (min-width: 1024px) {
-.calc_top {
-        translate: 0 calc(var(--one)* 132);
-    }
-}
-
-
 .AddSection_div {
         max-width: min(var(--one)* 1356, 95%);
             display: flex;
@@ -153,3 +263,6 @@ line-height: calc(var(--one)*32);
 .custom_dots li button:before {
     @apply !text-white !text-[8px];
 }
+}
+
+
