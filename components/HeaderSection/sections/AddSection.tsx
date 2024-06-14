@@ -25,7 +25,7 @@ function AddSection() {
               Your browser does not support the video tag.
             </video>
           </div>
-          <div className="flex Hero_text_gap items-center">
+          <div className="flex flex-col sm:flex-row Hero_text_gap items-center">
             <h1 className="AddSection_presale_text font-[800]">
               Presale is <span className="text-green">Live</span>
             </h1>

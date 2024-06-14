@@ -96,8 +96,8 @@
 }
 
 .AddSection_presale_text {
-    font-size: calc(var(--one)*90);
-    line-height: calc(var(--one)*99);
+    font-size: calc(var(--one)*110);
+    line-height: calc(var(--one)*119);
 }
 
 .custom_dots li button:before {
