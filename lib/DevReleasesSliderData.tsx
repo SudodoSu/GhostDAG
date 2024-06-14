@@ -1,5 +1,9 @@
+import image1 from "@/public/images/dev-release-empty-bg.png";
+import image2 from "@/public/images/dev-release-empty-bg.png";
+import { StaticImageData } from "next/image";
+
 type LinksData = {
-  src: string;
+  src: StaticImageData;
   alt: string;
   href: string;
   title: string;
@@ -14,7 +18,7 @@ type DataObject = {
 export const DevReleasesSliderData: DataObject = {
   data: [
     {
-      src: "/images/dev-release-empty-bg.png",
+      src: image1,
       alt: "dev-release-empty-bg",
       href: "/dev-releases/dev-release-1",
       title: `Dev Release 1`,
@@ -22,7 +26,7 @@ export const DevReleasesSliderData: DataObject = {
       date: "February 2024",
     },
     {
-      src: "/images/dev-release-empty-bg.png",
+      src: image2,
       alt: "dev-release-empty-bg",
       href: "/dev-releases/dev-release-1.1",
       title: `Dev Release 1.1`,
@@ -30,7 +34,7 @@ export const DevReleasesSliderData: DataObject = {
       date: "March 2024",
     },
     {
-      src: "/images/dev-release-empty-bg.png",
+      src: image1,
       alt: "dev-release-empty-bg",
       href: "/dev-releases/dev-release-1",
       title: `Dev Release 1`,

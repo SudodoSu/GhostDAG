@@ -42,7 +42,6 @@ const Navbar = () => {
                     alt="ZkSync.ai Logo"
                     width={25}
                     height={25}
-                    placeholder="blur"
                     priority={true}
                     className="w-full h-full "
                   />
@@ -53,7 +52,6 @@ const Navbar = () => {
                     alt="ZkSync.ai Logo"
                     width={50}
                     height={50}
-                    placeholder="blur"
                     priority={true}
                     className="w-full h-full "
                   />

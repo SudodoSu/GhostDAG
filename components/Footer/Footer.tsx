@@ -1,5 +1,5 @@
-import { socialsData } from "@/lib/socialsData";
 import Image from "next/image";
+import image1 from "@/public/images/logo_img.png";
 import "./footer.css";
 
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
               <div className="relative footer_logo flex items-center justify-center">
                 <div className="absolute ">
                   <Image
-                    src="/images/logo_img.png"
+                    src={image1}
                     alt="ZkSync.ai Logo"
                     width={25}
                     height={25}
@@ -27,7 +27,6 @@ function Footer() {
                     width={50}
                     height={50}
                     className="w-full h-full "
-                    placeholder="blur"
                   />
                 </div>
               </div>
@@ -152,7 +151,6 @@ function Footer() {
                     alt="Twitter"
                     width={20}
                     height={20}
-                    placeholder="blur"
                   />{" "}
                   Twitter
                 </a>
@@ -164,7 +162,6 @@ function Footer() {
                     alt="Telegram"
                     width={20}
                     height={20}
-                    placeholder="blur"
                   />{" "}
                   Telegram
                 </a>
@@ -176,7 +173,6 @@ function Footer() {
                     alt="Youtube"
                     width={20}
                     height={20}
-                    placeholder="blur"
                   />{" "}
                   Youtube
                 </a>

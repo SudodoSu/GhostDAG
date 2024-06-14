@@ -2,6 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { paymentIconsList } from "@/lib/paymentIconsList";
 
+import image1 from "@/public/images/keynote-hero-2.webp";
+import image2 from "@/public/images/keynote-bg.webp";
+import image3 from "@/public/images/keynote-bg-2.webp";
+
 function Keynote2() {
   return (
     <div className="w-full lg:h-[calc(var(--one)*900)] h-[calc(100vh-10rem)] relative calc_top ">
@@ -9,7 +13,7 @@ function Keynote2() {
         <div className="h-[calc(100vh-10rem)] lg:h-auto relative overflow-hidden w-full flex flex-col lg:block items-center justify-center">
           <div className="hidden lg:block mx-auto lg:h-auto h-full relative lg:overflow-hidden ">
             <Image
-              src="/images/keynote-hero-2.webp"
+              src={image1}
               alt="keynote-hero-2"
               width={485}
               height={415}
@@ -18,7 +22,7 @@ function Keynote2() {
               className=" Hero_img w-full lg:h-[calc(var(--one)*415)] lg:w-[calc(var(--one)*485)] lg:left-1/2 bottom-0"
             />
             <Image
-              src="/images/keynote-bg.webp"
+              src={image2}
               alt="keynote-bg"
               width={1337}
               height={751}
@@ -30,7 +34,7 @@ function Keynote2() {
           <div className="Hero_ellipse top-full lg:left-1/2 lg:top-1/2"></div>
           <div className="lg:hidden w-full h-full">
             <Image
-              src="/images/keynote-bg-2.webp"
+              src={image3}
               alt="keynote-bg-2"
               width={1440}
               height={696}
@@ -82,7 +86,6 @@ function Keynote2() {
                       alt={icon.alt}
                       width={60}
                       height={48}
-                      placeholder="blur"
                       className="paymentIcons md:w-[calc(var(--one)*120)] md:h-[calc(var(--one)*120)]"
                     />
                   </li>

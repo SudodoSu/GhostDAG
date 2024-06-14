@@ -1,10 +1,11 @@
 import PageDirection from "@/components/PageDestination/PageDirection";
+import image1 from "@/public/images/PageDirection/dev-release-blog-img.png";
 
 function page() {
   return (
     <main>
       <PageDirection
-        image="/images/PageDirection/dev-release-blog-img.png"
+        image={image1}
         title="Dev Release 1.1"
         PagePath="GhostDAG Dev News"
       />

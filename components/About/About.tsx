@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import image1 from "@/public/images/logo_img.png";
 function About() {
   return (
     <section className="w-full py-20 pt-32">
@@ -9,7 +9,7 @@ function About() {
           <div className=" mx-auto relative w-[calc(var(--one)*300)] h-[calc(var(--one)*300)] flex items-center justify-center">
             <div className="absolute ">
               <Image
-                src="/images/logo_img.png"
+                src={image1}
                 alt="ZkSync.ai Logo"
                 width={100}
                 height={100}
@@ -24,7 +24,6 @@ function About() {
                 width={300}
                 height={300}
                 className="w-full h-full "
-                placeholder="blur"
               />
             </div>
           </div>

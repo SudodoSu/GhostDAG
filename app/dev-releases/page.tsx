@@ -2,12 +2,13 @@ import PageDirection from "@/components/PageDestination/PageDirection";
 import { DevReleasesSliderData } from "@/lib/DevReleasesSliderData";
 import Image from "next/image";
 import Link from "next/link";
+import image1 from "@/public/images/PageDirection/dev-news.png";
 
 function page() {
   return (
     <div>
       <PageDirection
-        image="/images/PageDirection/dev-news.png"
+        image={image1}
         title="Dev Releases"
         PagePath="Daily Dev Releases"
       />
@@ -25,6 +26,7 @@ function page() {
                   alt={item.alt}
                   width={500}
                   height={282}
+                  placeholder="blur"
                   className="w-full h-full"
                 />
                 <h3 className="dev_releases_image_title">{item.title}</h3>

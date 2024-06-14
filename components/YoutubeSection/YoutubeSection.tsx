@@ -1,5 +1,6 @@
 import Image from "next/image";
 import YoutubeSlider from "./YoutubeSlider";
+import image1 from "@/public/images/youtube.png";
 
 function YoutubeSection() {
   return (
@@ -7,7 +8,7 @@ function YoutubeSection() {
       <div className="container flex flex-col gap-5">
         <div className="flex flex-col items-center gap-3">
           <Image
-            src="/images/youtube.png"
+            src={image1}
             alt="Youtube"
             width={204}
             height={46}
@@ -23,7 +24,6 @@ function YoutubeSection() {
                   alt="Star"
                   width={20}
                   height={20}
-                  placeholder="blur"
                 />
               ))}
             </div>
