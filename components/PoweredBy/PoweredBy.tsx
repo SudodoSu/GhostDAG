@@ -11,7 +11,13 @@ function PoweredBy() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-[calc(var(--one)*30)]">
           {PoweredByIconsData.data.map((data, index) => (
             <div key={index}>
-              <Image src={data.path} alt={data.alt} width={177} height={74} />
+              <Image
+                src={data.path}
+                alt={data.alt}
+                width={177}
+                height={74}
+                placeholder="blur"
+              />
             </div>
           ))}
         </div>

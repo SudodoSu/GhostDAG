@@ -8,28 +8,34 @@ function Keynote2() {
       <div className="relative">
         <div className="h-[calc(100vh-10rem)] lg:h-auto relative overflow-hidden w-full flex flex-col lg:block items-center justify-center">
           <div className="hidden lg:block mx-auto lg:h-auto h-full relative lg:overflow-hidden ">
-            <img
+            <Image
               src="/images/keynote-hero-2.webp"
               alt="keynote-hero-2"
               width={485}
               height={415}
+              placeholder="blur"
+              priority={true}
               className=" Hero_img w-full lg:h-[calc(var(--one)*415)] lg:w-[calc(var(--one)*485)] lg:left-1/2 bottom-0"
             />
-            <img
+            <Image
               src="/images/keynote-bg.webp"
               alt="keynote-bg"
               width={1337}
               height={751}
+              placeholder="blur"
+              priority={true}
               className="h-[calc(var(--one)*751)] w-[calc(var(--one)*1337)] relative -z-5 Hero_img_bg lg:left-1/2 bottom-0"
             />
           </div>
           <div className="Hero_ellipse top-full lg:left-1/2 lg:top-1/2"></div>
           <div className="lg:hidden w-full h-full">
-            <img
+            <Image
               src="/images/keynote-bg-2.webp"
               alt="keynote-bg-2"
               width={1440}
               height={696}
+              placeholder="blur"
+              priority={true}
               className="mx-auto object-cover h-full md:w-full w-full"
             />
           </div>
@@ -76,6 +82,7 @@ function Keynote2() {
                       alt={icon.alt}
                       width={60}
                       height={48}
+                      placeholder="blur"
                       className="paymentIcons md:w-[calc(var(--one)*120)] md:h-[calc(var(--one)*120)]"
                     />
                   </li>

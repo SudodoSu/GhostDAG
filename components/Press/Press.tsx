@@ -22,6 +22,7 @@ function Press() {
                   alt="Telegram"
                   width={50}
                   height={50}
+                  placeholder="blur"
                   className="w-ful h-full"
                 />
               </a>
@@ -36,6 +37,7 @@ function Press() {
                   alt="twitter"
                   width={50}
                   height={50}
+                  placeholder="blur"
                   className="w-ful h-full"
                 />
               </a>
@@ -50,6 +52,7 @@ function Press() {
                   alt="youtube"
                   width={50}
                   height={50}
+                  placeholder="blur"
                   className="w-ful h-full"
                 />
               </a>

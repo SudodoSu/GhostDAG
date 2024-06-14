@@ -17,6 +17,7 @@ function Footer() {
                     width={25}
                     height={25}
                     className="w-full h-full "
+                    placeholder="blur"
                   />
                 </div>
                 <div className="absolute inset-0 ">
@@ -26,6 +27,7 @@ function Footer() {
                     width={50}
                     height={50}
                     className="w-full h-full "
+                    placeholder="blur"
                   />
                 </div>
               </div>
@@ -150,6 +152,7 @@ function Footer() {
                     alt="Twitter"
                     width={20}
                     height={20}
+                    placeholder="blur"
                   />{" "}
                   Twitter
                 </a>
@@ -161,6 +164,7 @@ function Footer() {
                     alt="Telegram"
                     width={20}
                     height={20}
+                    placeholder="blur"
                   />{" "}
                   Telegram
                 </a>
@@ -172,6 +176,7 @@ function Footer() {
                     alt="Youtube"
                     width={20}
                     height={20}
+                    placeholder="blur"
                   />{" "}
                   Youtube
                 </a>

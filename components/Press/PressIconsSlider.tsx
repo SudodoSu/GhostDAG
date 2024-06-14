@@ -31,6 +31,7 @@ export default function PressIconsSlider() {
                     alt={item.alt}
                     width={200}
                     height={200}
+                    placeholder="blur"
                     className="w-full h-full"
                   />
                 </div>

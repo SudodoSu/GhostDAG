@@ -12,7 +12,6 @@ type directionProps = {
 
 function PageDirection(props: directionProps) {
   const { image, title, updated, from_to, PagePath } = props;
-  const pathname = usePathname();
 
   return (
     <section className="w-full mt-[calc(var(--one)*250)]">
@@ -23,6 +22,7 @@ function PageDirection(props: directionProps) {
             alt={title}
             width={1354}
             height={360}
+            placeholder="blur"
             className=" aspect-w-1354 aspect-h-360"
           />
           <div className="absolute top-[5%] left-[10%]">

@@ -18,6 +18,7 @@ function Tokenomics() {
                 alt="Graff"
                 width={460}
                 height={460}
+                placeholder="blur"
               />
             </div>
           </div>

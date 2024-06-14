@@ -57,6 +57,7 @@ export default function DevReleasesSlider() {
                   alt={item.alt}
                   width={500}
                   height={282}
+                  placeholder="blur"
                   className="w-full h-full"
                 />
                 <h3 className="dev_releases_image_title">{item.title}</h3>

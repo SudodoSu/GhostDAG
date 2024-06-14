@@ -11,6 +11,7 @@ function YoutubeSection() {
             alt="Youtube"
             width={204}
             height={46}
+            placeholder="blur"
           />
           <div className="flex gap-2 !items-center justify-center">
             <p className="!my-auto">Youtube Reviews</p>
@@ -22,6 +23,7 @@ function YoutubeSection() {
                   alt="Star"
                   width={20}
                   height={20}
+                  placeholder="blur"
                 />
               ))}
             </div>

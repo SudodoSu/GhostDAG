@@ -12,7 +12,6 @@ import { linksData } from "@/lib/Links";
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   const navRef = useRef<HTMLDivElement>(null);
-  const pathname = usePathname();
 
   const toggleDrawer =
     (inOpen: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
@@ -43,6 +42,8 @@ const Navbar = () => {
                     alt="ZkSync.ai Logo"
                     width={25}
                     height={25}
+                    placeholder="blur"
+                    priority={true}
                     className="w-full h-full "
                   />
                 </div>
@@ -52,6 +53,8 @@ const Navbar = () => {
                     alt="ZkSync.ai Logo"
                     width={50}
                     height={50}
+                    placeholder="blur"
+                    priority={true}
                     className="w-full h-full "
                   />
                 </div>

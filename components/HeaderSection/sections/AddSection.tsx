@@ -37,6 +37,7 @@ function AddSection() {
                     alt={icon.alt}
                     width={60}
                     height={48}
+                    placeholder="blur"
                     className="paymentIcons"
                   />
                 </li>

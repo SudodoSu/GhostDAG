@@ -14,6 +14,7 @@ function About() {
                 width={100}
                 height={100}
                 className="w-full h-full "
+                placeholder="blur"
               />
             </div>
             <div className="absolute inset-0">
@@ -23,6 +24,7 @@ function About() {
                 width={300}
                 height={300}
                 className="w-full h-full "
+                placeholder="blur"
               />
             </div>
           </div>

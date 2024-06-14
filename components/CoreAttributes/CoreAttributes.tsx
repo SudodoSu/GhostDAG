@@ -18,6 +18,7 @@ function CoreAttributes() {
                     alt="Coin"
                     width={100}
                     height={100}
+                    placeholder="blur"
                     className="w-full h-full"
                   />
                 </div>
@@ -57,6 +58,7 @@ function CoreAttributes() {
                     alt="Coin"
                     width={100}
                     height={100}
+                    placeholder="blur"
                   />
                 </div>
               </div>
@@ -73,6 +75,7 @@ function CoreAttributes() {
                     alt="Coin"
                     width={100}
                     height={100}
+                    placeholder="blur"
                     className="w-full h-full"
                   />
                 </div>
@@ -104,6 +107,7 @@ function CoreAttributes() {
                       alt="Coin"
                       width={100}
                       height={100}
+                      placeholder="blur"
                       className="w-full h-full"
                     />
                   </div>
@@ -142,6 +146,7 @@ function CoreAttributes() {
                     alt="Coin"
                     width={100}
                     height={100}
+                    placeholder="blur"
                   />
                 </div>
               </div>
