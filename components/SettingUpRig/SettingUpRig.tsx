@@ -32,7 +32,7 @@ function SettingUpRig() {
                       className="w-full h-full"
                     />
                   </div>
-                  <h2 className="mb-[calc(var(--one)*24)] text-[calc(var(--one)*32)] font-titleBold">
+                  <h2 className="text-center mb-[calc(var(--one)*24)] text-[calc(var(--one)*32)] font-titleBold">
                     {item.title}
                   </h2>
                   <p>{item.des}</p>
@@ -57,7 +57,7 @@ function SettingUpRig() {
                       className="w-full h-full"
                     />
                   </div>
-                  <h2 className="mb-[calc(var(--one)*24)] text-[calc(var(--one)*32)] font-titleBold">
+                  <h2 className="text-center mb-[calc(var(--one)*24)] text-[calc(var(--one)*32)] font-titleBold">
                     {item.title}
                   </h2>
                   <p>{item.des}</p>

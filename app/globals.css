@@ -234,3 +234,14 @@ p {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+
+.PickMinerImage {
+  transition: all .4s ease;
+  border-radius: calc(var(--one)*20);
+  padding: calc(var(--one)*24);
+  width: fit-content;
+  background: url(/images/PickMiners/modern-bg-light.webp);
+  background-position: 50%;
+  background-size: 200% 200%;
+}

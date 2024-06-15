@@ -3,6 +3,7 @@ import image1 from "@/public/images/rigs.png";
 import MiningMadeSimpleComponent from "@/components/MiningMadeSimple/MiningMadeSimpleComponent";
 import PickMinersComponent from "@/components/PickMiners/PickMinersComponent";
 import SettingUpRig from "@/components/SettingUpRig/SettingUpRig";
+import Products from "@/components/Products/Products";
 
 function page() {
   return (
@@ -25,7 +26,7 @@ function page() {
         <div>
           <Image
             src={image1}
-            alt=""
+            alt="rigs"
             width={1128}
             height={478}
             placeholder="blur"
@@ -35,6 +36,7 @@ function page() {
       <MiningMadeSimpleComponent />
       <PickMinersComponent />
       <SettingUpRig />
+      <Products />
     </main>
   );
 }
