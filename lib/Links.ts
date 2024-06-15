@@ -13,7 +13,7 @@ export const linksData: DataObject = {
   data: [
     { path: "/", titles: "keynote" },
     { path: "/dev-releases", titles: "dev releases" },
-    { path: "/presale", titles: "products" },
+    { path: "/crypto-mining-rigs", titles: "products" },
     { path: "/presale", titles: "win $2m usd" },
     { path: "/presale", titles: "wiki" },
     { path: "/presale", titles: "calculator" },
