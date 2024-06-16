@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import "./nav.css";
 import { usePathname } from "next/navigation";
 import { Divide as Hamburger } from "hamburger-react";
@@ -12,6 +12,8 @@ import { linksData } from "@/lib/Links";
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   const navRef = useRef<HTMLDivElement>(null);
+  const [ProductsVisible, setProductsVisible] = useState<boolean>(false);
+  const [ProductsVisibleUl, setProductsVisibleUl] = useState<boolean>(false);
 
   const toggleDrawer =
     (inOpen: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
@@ -25,6 +27,16 @@ const Navbar = () => {
 
       setOpen(inOpen);
     };
+
+  const handleMouseEnter = () => {
+    setProductsVisible(true);
+    setProductsVisibleUl(true);
+  };
+
+  const handleMouseLeave = () => {
+    setProductsVisible(false);
+    setProductsVisibleUl(false);
+  };
 
   return (
     <section className={`w-full fixed z-40 bg-background/95`}>
@@ -66,13 +78,45 @@ const Navbar = () => {
             <div className="flex gap-3 md:gap-5">
               <ul className="flex items-center">
                 {linksData.data.map((item, index) => (
-                  <li key={index} className={``}>
+                  <li
+                    key={index}
+                    className={`relative`}
+                    onMouseEnter={
+                      item.titles === "products" ? handleMouseEnter : undefined
+                    }
+                    onMouseLeave={
+                      item.titles === "products" ? handleMouseLeave : undefined
+                    }
+                  >
                     <a
                       href={item.path}
-                      className={`uppercase font-titleBold rounded-full text-white text-sm xl:text-base 2xl:text-lg relative block leading-7 px-3 py-2`}
+                      className={`uppercase font-titleBold rounded-full text-white text-sm lg:text-[calc(var(--one)*18)] relative block leading-7 px-3 py-2`}
                     >
                       {item.titles}
                     </a>
+
+                    {item.titles === "products" &&
+                      (ProductsVisible || ProductsVisibleUl) && (
+                        <ul
+                          onMouseEnter={handleMouseEnter}
+                          onMouseLeave={handleMouseLeave}
+                          className="absolute flex flex-col bg-[#313134] rounded-[calc(var(--one)*5)] z-20 gap-0 left-1/2 top-[calc(100%+var(--one))] transform -translate-x-1/2 w-max transition-all duration-300 pointer-events-none overflow-hidden"
+                        >
+                          {linksData.products.map((x, i) => (
+                            <li
+                              key={i}
+                              className="border-b-[calc(var(--one)*1)] border-white cursor-pointer"
+                            >
+                              <a
+                                href={x.path}
+                                className="block p-[calc(var(--one)*16)]"
+                              >
+                                {x.titles}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                   </li>
                 ))}
                 <li>
