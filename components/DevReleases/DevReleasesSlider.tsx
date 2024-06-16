@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./devreleases.css";
 import Link from "next/link";
+import image2 from "@/public/images/dev-release-empty-bg.png";
 
 export default function DevReleasesSlider() {
   var settings = {
@@ -53,8 +54,8 @@ export default function DevReleasesSlider() {
                 className="dev_releases_image_container "
               >
                 <Image
-                  src={item.src}
-                  alt={item.alt}
+                  src={image2}
+                  alt="dev_releases_image"
                   width={500}
                   height={282}
                   placeholder="blur"

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import image1 from "@/public/images/logo_img.png";
+
 function About() {
   return (
     <section className="w-full py-20 pt-32">
@@ -10,7 +11,7 @@ function About() {
             <div className="absolute ">
               <Image
                 src={image1}
-                alt="ZkSync.ai Logo"
+                alt="GhostDAG Logo"
                 width={100}
                 height={100}
                 className="w-full h-full "
@@ -20,7 +21,7 @@ function About() {
             <div className="absolute inset-0">
               <Image
                 src="/images/gifs/3d.gif"
-                alt="ZkSync.ai Logo"
+                alt="GhostDAG Logo"
                 width={300}
                 height={300}
                 className="w-full h-full "
