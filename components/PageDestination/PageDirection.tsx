@@ -15,14 +15,14 @@ function PageDirection(props: directionProps) {
   return (
     <section className="w-full mt-[calc(var(--one)*250)]">
       <div className="container2 relative">
-        <div className="relative h-[calc(var(--one)*360)]">
+        <div className="relative h-[calc(var(--one)*360)] rounded-3xl">
           <Image
             src={image}
             alt={title}
             width={1354}
             height={360}
             placeholder="blur"
-            className=" aspect-w-1354 aspect-h-360"
+            className=" aspect-w-1354 aspect-h-360 rounded-3xl"
           />
           <div className="absolute top-[5%] left-[10%]">
             <span>

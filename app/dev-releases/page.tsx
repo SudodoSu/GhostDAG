@@ -21,7 +21,7 @@ export async function generateMetadata() {
 
 function page() {
   return (
-    <div>
+    <main>
       <PageDirection
         image={image1}
         title="Dev Releases"
@@ -30,7 +30,7 @@ function page() {
       <div className="">
         <AllReleases />
       </div>
-    </div>
+    </main>
   );
 }
 
