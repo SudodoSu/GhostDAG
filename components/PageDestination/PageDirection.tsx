@@ -13,8 +13,8 @@ function PageDirection(props: directionProps) {
   const { image, title, updated, from_to, PagePath } = props;
 
   return (
-    <section className="w-full mt-[calc(var(--one)*250)]">
-      <div className="container2 relative">
+    <section className="w-full mt-[calc(var(--one)*250)] relative">
+      <div className="max-w-[min(var(--one)*1356,95%)] relative mx-auto">
         <div className="relative h-[calc(var(--one)*360)] rounded-3xl">
           <Image
             src={image}

@@ -1,0 +1,22 @@
+.ul_li::after {
+    content: "";
+position: absolute;
+width: calc(var(--one)*0);
+height: calc(var(--one)*4);
+background-color: #1d44ff;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+border-radius: calc(var(--one)*4);
+transition: all .5s ease ;
+}
+
+.ul_tokenomics {
+    @apply relative pl-[calc(var(--one)*44.16)] transition-all duration-500;
+}
+
+.ul_li.active::after {
+    width: calc(var(--one)*20);
+    height: calc(var(--one) * 6);
+    transform: translateY(-60%);
+}
