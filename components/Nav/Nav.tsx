@@ -3,17 +3,17 @@
 import Image from "next/image";
 import React, { useState, useRef } from "react";
 import "./nav.css";
-import { usePathname } from "next/navigation";
 import { Divide as Hamburger } from "hamburger-react";
 import Link from "next/link";
 import Drawer from "@mui/joy/Drawer";
 import { linksData } from "@/lib/Links";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   const navRef = useRef<HTMLDivElement>(null);
   const [ProductsVisible, setProductsVisible] = useState<boolean>(false);
-  const [ProductsVisibleUl, setProductsVisibleUl] = useState<boolean>(false);
+  const [MechanicsVisible, setMechanicsVisible] = useState<boolean>(false);
 
   const toggleDrawer =
     (inOpen: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
@@ -30,12 +30,40 @@ const Navbar = () => {
 
   const handleMouseEnter = () => {
     setProductsVisible(true);
-    setProductsVisibleUl(true);
   };
 
   const handleMouseLeave = () => {
     setProductsVisible(false);
-    setProductsVisibleUl(false);
+  };
+
+  const handleSubNavOpenings = (title: string | undefined) => {
+    if (title === "products") {
+      setProductsVisible(true);
+    } else if (title === "mechanics") {
+      setMechanicsVisible(true);
+    }
+  };
+
+  const handleSubNavClosings = (title: string | undefined) => {
+    if (title === "products") {
+      setProductsVisible(false);
+    } else if (title === "mechanics") {
+      setMechanicsVisible(false);
+    }
+  };
+
+  const fadeIn = {
+    initial: {
+      opacity: 0,
+      y: 10,
+    },
+    animate: (index: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05,
+      },
+    }),
   };
 
   return (
@@ -80,32 +108,30 @@ const Navbar = () => {
                 {linksData.data.map((item, index) => (
                   <li
                     key={index}
-                    className={`relative`}
-                    onMouseEnter={
-                      item.titles === "products" ? handleMouseEnter : undefined
-                    }
-                    onMouseLeave={
-                      item.titles === "products" ? handleMouseLeave : undefined
-                    }
+                    className={`relative cursor-pointer`}
+                    onMouseEnter={() => handleSubNavOpenings(item.titles)}
+                    onMouseLeave={() => handleSubNavClosings(item.titles)}
                   >
                     <a
                       href={item.path}
                       className={`uppercase font-titleBold rounded-full text-white text-sm lg:text-[calc(var(--one)*18)] relative block leading-7 px-3 py-2`}
                     >
                       {item.titles}
-                    </a>
-
-                    {item.titles === "products" &&
-                      (ProductsVisible || ProductsVisibleUl) && (
-                        <ul
-                          onMouseEnter={handleMouseEnter}
-                          onMouseLeave={handleMouseLeave}
-                          className="absolute flex flex-col bg-[#313134] rounded-[calc(var(--one)*5)] z-20 gap-0 left-1/2 top-[calc(100%+var(--one))] transform -translate-x-1/2 w-max transition-all duration-300 pointer-events-none overflow-hidden"
+                      {item.titles === "products" && ProductsVisible && (
+                        <motion.ul
+                          variants={fadeIn}
+                          initial="initial"
+                          whileInView="animate"
+                          viewport={{ once: false }}
+                          custom={index}
+                          className="animation_nav_ul -left-[25%]"
                         >
                           {linksData.products.map((x, i) => (
                             <li
                               key={i}
-                              className="border-b-[calc(var(--one)*1)] border-white cursor-pointer"
+                              className={`hover:bg-[#1d44ff] ${
+                                i === 5 ? "" : "border-b-[calc(var(--one)*1)]"
+                              } border-white cursor-pointer`}
                             >
                               <a
                                 href={x.path}
@@ -115,8 +141,35 @@ const Navbar = () => {
                               </a>
                             </li>
                           ))}
-                        </ul>
+                        </motion.ul>
                       )}
+                      {item.titles === "mechanics" && MechanicsVisible && (
+                        <motion.ul
+                          variants={fadeIn}
+                          initial="initial"
+                          whileInView="animate"
+                          viewport={{ once: false }}
+                          custom={index}
+                          className="animation_nav_ul"
+                        >
+                          {linksData.mechanics.map((x, i) => (
+                            <li
+                              key={i}
+                              className={`hover:bg-[#1d44ff] ${
+                                i === 3 ? "" : "border-b-[calc(var(--one)*1)]"
+                              } border-white cursor-pointer`}
+                            >
+                              <a
+                                href={x.path}
+                                className="block p-[calc(var(--one)*16)]"
+                              >
+                                {x.titles}
+                              </a>
+                            </li>
+                          ))}
+                        </motion.ul>
+                      )}
+                    </a>
                   </li>
                 ))}
                 <li>

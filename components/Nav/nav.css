@@ -21,3 +21,15 @@
     gap: calc(var(--one)* 9.93);
   }
 }
+
+.animation_nav_ul {
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #313134;
+    border-radius: calc(var(--one)*5);
+    gap: 0 !important;
+    top: calc(100% + var(--one));
+    width: max-content;
+    overflow: hidden;
+}
