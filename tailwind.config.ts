@@ -34,6 +34,7 @@ const config: Config = {
 
         "radial-gradient-signup":
           "radial-gradient(circle, #001dff 50%, #25ff6f 100%)",
+        "gray-gradient": "linear-gradient(180deg,#26262c,#343439)",
       },
       boxShadow: {
         "blue-shadow": "0 51px 200px -56px #1d44ff",

@@ -57,9 +57,20 @@ function AllReleases() {
               <h6 className="">{item.title}</h6>
               <p className="slider_description">{item.des}</p>
               <span>{item.date}</span>
-              <Link href={item.href} className="dev_releases_read_more">
-                Read More
-              </Link>
+              <span>
+                <Link href={item.href} className="dev_releases_read_more">
+                  Read More{" "}
+                  <span className="w-[calc(var(-one)*16)]">
+                    <Image
+                      src="/images/svgs/arrowGradient.svg"
+                      alt="arrow"
+                      width={16}
+                      height={16}
+                      className="w-[calc(var(-one)*10)] h-[calc(var(-one)*10)]"
+                    />
+                  </span>
+                </Link>
+              </span>
             </div>
           </div>
         ))}
