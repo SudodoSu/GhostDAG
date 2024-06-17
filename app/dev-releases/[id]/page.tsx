@@ -8,6 +8,8 @@ import PageDirection from "@/components/PageDestination/PageDirection";
 import ReactMarkdown from "react-markdown";
 import image2 from "@/public/images/PageDirection/dev-release-blog-img.png";
 import { generateMetadata } from "@/components/GenerateMetadata/GenerateMetadata";
+import CustomMarkdown from "@/components/CustomMarkdown/CutomMarkdown";
+import Link from "next/link";
 
 const PostPage = () => {
   const { id } = useParams() as { id: string }; // Use useParams to access route parameters
@@ -57,19 +59,25 @@ const PostPage = () => {
         PagePath="GhostDAG Dev News"
       />
       <div className="container2 flex flex-col md:flex-row">
-        <nav className="sticky top-0 max-w-xs">
-          <ul className="space-y-2">
+        <nav className="sticky top-0 max-w-xs w-full md:w-[35%]">
+          <ul className="space-y-2 flex flex-col gap-[calc(var(--one)*16)]">
             {article.navigation.map((navItem, index) => (
               <li key={index}>
-                <a href={`#${article.navigation_href[index]}`}>{navItem}</a>
+                <a
+                  className="!text-gray-400"
+                  href={`#${article.navigation_href[index]}`}
+                >
+                  {navItem}
+                </a>
               </li>
             ))}
           </ul>
         </nav>
         <div className="ml-8 flex-1 p_article">
-          <ReactMarkdown className="markdown_style">
-            {article.markdown}
-          </ReactMarkdown>
+          <CustomMarkdown
+            content={article.markdown}
+            className="markdown_style"
+          />
         </div>
       </div>
     </main>

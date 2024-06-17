@@ -11,6 +11,14 @@
     text-align: center;
 }
 
+.markdown_style h3 {
+    @apply text-3xl font-bold my-4;
+}
+
 .markdown_style p strong {
-    @apply text-2xl;
+    @apply text-lg;
+}
+
+.markdown_style p em {
+    @apply text-[#ea1313];
 }
