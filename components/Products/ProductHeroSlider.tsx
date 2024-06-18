@@ -3,7 +3,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../products.css";
+import "./products.css";
 import rightNavi from "@/public/images/rightNavi.png";
 import leftNavi from "@/public/images/leftNavi.png";
 import { useEffect, useRef, useState } from "react";
