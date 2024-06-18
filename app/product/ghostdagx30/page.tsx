@@ -9,7 +9,7 @@ function page() {
     <main>
       <PagePath pagePath="GhostDAG Payment Card" />
       <X1 />
-      <AboutProduct data={AllProductsAboutData.x1} />
+      <AboutProduct data={AllProductsAboutData.x30} />
       <Products />
     </main>
   );
