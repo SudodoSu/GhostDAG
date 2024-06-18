@@ -9,7 +9,7 @@ import { ProductSliderData } from "@/lib/products/ProductSliderData";
 function page() {
   return (
     <main>
-      <PagePath pagePath="GhostDAG Payment Card" />
+      <PagePath pagePath="GhostDAG X30" />
       <ProductHero
         ProductInfoData={ProductHeroInfoData.x30}
         ProductSlider={ProductSliderData.x30}

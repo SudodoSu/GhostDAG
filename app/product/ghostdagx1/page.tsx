@@ -7,7 +7,7 @@ import { AllProductsAboutData } from "@/lib/products/allAboutData";
 function page() {
   return (
     <main>
-      <PagePath pagePath="GhostDAG Payment Card" />
+      <PagePath pagePath="GhostDAG X1" />
       <X1 />
       <AboutProduct data={AllProductsAboutData.x1} />
       <Products />
