@@ -22,10 +22,10 @@ export const linksData: DataObject = {
   products: [
     { path: "/tokenomics", titles: "gdag coins" },
     { path: "/product/ghostdag-card", titles: "ghostdag card" },
-    { path: "/product/ghostdag-x1", titles: "ghostdag x1" },
-    { path: "/product/ghostdag-x10", titles: "ghostdag x10" },
-    { path: "/product/ghostdag-x30", titles: "ghostdag x30" },
-    { path: "/product/ghostdag-x100", titles: "ghostdag x100" },
+    { path: "/product/ghostdagx1", titles: "ghostdag x1" },
+    { path: "/product/ghostdagx10", titles: "ghostdag x10" },
+    { path: "/product/ghostdagx30", titles: "ghostdag x30" },
+    { path: "/product/ghostdagx100", titles: "ghostdag x100" },
   ],
   mechanics: [
     { path: "/pillars", titles: "pillars" },

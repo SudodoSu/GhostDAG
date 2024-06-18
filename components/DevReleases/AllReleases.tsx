@@ -35,7 +35,7 @@ function AllReleases() {
 
   return (
     <>
-      <div className="container2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[calc(var(--one)*50)]">
+      <div className="container3 mx-auto mt-[calc(var(--one)*30)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[calc(var(--one)*50)]">
         {visibleReleases.map((item, index) => (
           <div key={index} className="">
             <div className="dev_releases_card ">

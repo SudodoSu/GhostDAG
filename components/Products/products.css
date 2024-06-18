@@ -3,3 +3,17 @@
         background-position: 50%;
         background-size: 150% 150%;
 }
+
+.custom_div {
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%) rotate(-153.87deg);
+        width: calc(var(--one)*251.41);
+        height: calc(var(--one)*295.91);
+        border-radius: 50%;
+        z-index: -1;
+        background-color: #1d44ff;
+        opacity: .8;
+        filter: blur(calc(var(--one)*79.2));
+}
