@@ -118,7 +118,7 @@ function How() {
             </div>
             <div className="flex flex-col gap-[calc(var(--one)*24)]">
               <h2>Buy ETH, BNB & USDT with Apple Pay, Google Pay or Card</h2>
-              <p className="text-left !mb-0">
+              <p className="text-left !mb-0 leading-[calc(var(--one)*20.8)] text-[calc(var(--one)*16)]">
                 Visit{" "}
                 <a
                   className="text-white inline"
@@ -168,7 +168,7 @@ function How() {
             </div>
             <div className="flex flex-col gap-[calc(var(--one)*24)]">
               <h2>Buy GhostDAG with ETH or BNB</h2>
-              <p className="text-left !mb-0">
+              <p className="text-left !mb-0 leading-[calc(var(--one)*20.8)] text-[calc(var(--one)*16)]">
                 Once you have sufficient ETH or BNB in your wallet (if you do
                 not have ETH, USDT or BNB, please read option 1 first), you can
                 now swap your ETH or BNB for GhostDAG Network. Type in the
@@ -214,7 +214,7 @@ function How() {
             </div>
             <div className="flex flex-col gap-[calc(var(--one)*24)]">
               <h2>Buy BlockDAG with USDT</h2>
-              <p className="text-left !mb-0">
+              <p className="text-left !mb-0 leading-[calc(var(--one)*20.8)] text-[calc(var(--one)*16)]">
                 Please ensure you have at least $20 of USDT in your wallet
                 before commencing the transaction. Type in the amount of
                 BlockDAG Network you wish to purchase ($15 minimum). Click

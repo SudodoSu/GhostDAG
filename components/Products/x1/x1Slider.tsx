@@ -7,7 +7,7 @@ import "../products.css";
 import rightNavi from "@/public/images/rightNavi.png";
 import leftNavi from "@/public/images/leftNavi.png";
 import { useEffect, useRef, useState } from "react";
-import { X1SliderData } from "@/lib/products/x1/X1SliderData";
+import { ProductSliderData } from "@/lib/products/ProductSliderData";
 
 function SampleNextArrow(props: any) {
   const { onClick } = props;
@@ -66,7 +66,7 @@ export default function X1Slider() {
           asNavFor={nav2}
           ref={(slider: any) => (sliderRef1 = slider)}
         >
-          {X1SliderData.data.map((item, index) => (
+          {ProductSliderData.x1.map((item, index) => (
             <div key={index} className="overflow-hidden">
               <div className="rounded-[calc(var(--one)*16)] w-[calc(var(--one)*530)] h-[calc(var(--one)*450)]">
                 <Image
@@ -91,7 +91,7 @@ export default function X1Slider() {
           focusOnSelect={true}
           arrows={false}
         >
-          {X1SliderData.data.map((item, index) => (
+          {ProductSliderData.x1.map((item, index) => (
             <div
               key={index}
               className="overflow-hidden  rounded-[calc(var(--one)*16)] px-[calc(var(--one)*10)]"

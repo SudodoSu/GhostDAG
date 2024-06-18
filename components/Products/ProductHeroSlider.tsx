@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,7 +7,6 @@ import "./products.css";
 import rightNavi from "@/public/images/rightNavi.png";
 import leftNavi from "@/public/images/leftNavi.png";
 import { useEffect, useRef, useState } from "react";
-import { X1SliderData } from "@/lib/products/x1/X1SliderData";
 
 function SampleNextArrow(props: any) {
   const { onClick } = props;
@@ -33,7 +32,13 @@ function SamplePrevArrow(props: any) {
   );
 }
 
-export default function ProductHeroSlider() {
+type ProductSliderProps = {
+  ProductSlider: { image: StaticImageData; alt: string }[];
+};
+
+export default function ProductHeroSlider({
+  ProductSlider,
+}: ProductSliderProps) {
   var settings = {
     dots: false,
     speed: 500,
@@ -66,7 +71,7 @@ export default function ProductHeroSlider() {
           asNavFor={nav2}
           ref={(slider: any) => (sliderRef1 = slider)}
         >
-          {X1SliderData.data.map((item, index) => (
+          {ProductSlider.map((item, index) => (
             <div key={index} className="overflow-hidden">
               <div className="rounded-[calc(var(--one)*16)] w-[calc(var(--one)*530)] h-[calc(var(--one)*450)]">
                 <Image
@@ -91,7 +96,7 @@ export default function ProductHeroSlider() {
           focusOnSelect={true}
           arrows={false}
         >
-          {X1SliderData.data.map((item, index) => (
+          {ProductSlider.map((item, index) => (
             <div
               key={index}
               className="overflow-hidden  rounded-[calc(var(--one)*16)] px-[calc(var(--one)*10)]"

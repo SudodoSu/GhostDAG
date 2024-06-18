@@ -79,7 +79,7 @@ function AboutProduct({ data }: AboutProps) {
                     <h3 className="text-[calc(var(--one)*20)] leading-[calc(var(--one)*32)] font-titleBold">
                       {item.title}
                     </h3>
-                    <p className="text-left !mb-0 leading-[calc(var(--one)*20.8)]">
+                    <p className="text-left !mb-0 leading-[calc(var(--one)*20.8)] text-[calc(var(--one)*16)]">
                       {item.description}
                     </p>
                   </div>
