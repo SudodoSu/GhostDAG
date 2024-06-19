@@ -4,7 +4,7 @@ function Faq() {
   return (
     <section className="w-full py-20 faq_line">
       <div className="container2 flex flex-col items-center gap-[calc(var(--one)*150)]">
-        <div className="w-full">
+        {/* <div className="w-full">
           <h1 className="title !mb-[calc(var(--one)*15)]">FAQS</h1>
           <h4 className="!mb-[calc(var(--one)*20)] text-[calc(var(--one)*32)] leading-[calc(var(--one)*41.6)] font-titleBold text-center">
             Your most pressing queries, answered.
@@ -16,7 +16,7 @@ function Faq() {
               </Link>
             </button>
           </div>
-        </div>
+        </div> */}
         {/*  */}
         <div className="bg-blue2 rounded-3xl flex flex-col relative p-[calc(var(--one)*60)] gap-[calc(var(--one)*42)] shadow-blue-shadow ">
           <div className="flex flex-col gap-2">
